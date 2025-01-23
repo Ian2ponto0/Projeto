@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+       body 
+       {
+        Background-color: rgb(56, 0, 0);
+             font: normal 18px Courier;
+       }
+        strong 
+        {
+        color: white
+        }
+
+            input 
+            {
+            font: normal 18px Courier;
+            height: 30 px;
+            width: 100px; 
+            vertical-align: middle;
+            }
+
+     input#numero1 
+     {
+        margin-left: 500px;
+     }
+
+    </style>
+
+</head>
+
+    <body>
+
+        <h1 align = "center"> Calculadora </h1>
+
+            <input type="number" name= "numero1" id="numero1" > +
+
+                <input type="number" name= "numero2" id="numero2" >
+
+            <input type="button" value="somar" id="somabttn" onclick = "soma()" >
+
+        <h2 id= "result" align = "center">  </h2>
+
+
+    <Script>
+        function soma() {
+
+            var num1 = parseFloat(window.document.getElementById('numero1').value);
+
+                var num2 = parseFloat(window.document.getElementById('numero2').value);
+
+             var s = num1 + num2;
+
+        result.innerHTML = ` O resultado da soma do número <strong>${num1}</strong> com o número <strong>${num2}</strong> é <strong>${s}</strong>`
+        }
+    </Script>
+    
+</body>
+</html>

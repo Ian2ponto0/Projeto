@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area {
+            font: normal 18pt Arial;
+            background: blue;
+            text-align:center;
+            line-height: 190px;
+            width: 190px;
+            height: 190px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseleave="saiu()"> 
+        Vamos tentar
+    </div>
+    <script>
+        var a = window.document.getElementById('area')
+        function clicar() {
+            a.innerText = 'Ixtimula n'
+            a.style.background = 'purple'
+        }
+        function entrou(){
+            a.innerText = 'Sai >:c'
+            a.style.background = 'red'
+        }
+        function saiu(){
+            a.innerText = 'Volta :c'
+            a.style.background =   'blue'
+        }
+
+
+
+    </script>
+</body>
+</html>

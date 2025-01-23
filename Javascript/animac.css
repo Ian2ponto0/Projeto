@@ -1,0 +1,41 @@
+body{
+background-image: url(f112.png);
+background-size: cover;
+
+}
+
+div {
+border-radius: 50px;
+
+}
+
+
+
+div#perfil{
+height:500pt;
+background-color: blue;
+position:fixed; left:  50pt;
+width: 150pt;
+z-index: 1;
+}
+
+div#fotos{
+margin: 20pt;
+position: center;
+height: 50pt;
+width: 50pt;
+}
+img#perf{
+width: 150px;
+border-radius: 100%;
+}
+
+div#descricao1{
+    height: 85%;
+    background-color: rgba(103, 2, 133, 0.966);
+    position:fixed; right: 10px;
+    margin-right: 50pt;
+    width: 790pt;
+}
+
+
